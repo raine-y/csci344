@@ -6,4 +6,17 @@
 body {
     background: url("../asset/blurry-gradient-haikei.svg") no-repeat fixed center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    background: url("../asset/blurry-gradient-haikei(1).svg") no-repeat fixed center;
+    background-size: cover;
+    opacity: .34;
 }
