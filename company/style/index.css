@@ -2,3 +2,8 @@
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    background: url("../asset/blurry-gradient-haikei.svg") no-repeat fixed center;
+    background-size: cover;
+}
