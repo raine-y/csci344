@@ -1,6 +1,27 @@
+/* ~~~~~~~~~~~~~ */
+/* FONT FAMILIES */
+/* ~~~~~~~~~~~~~ */
+
+.federo-regular {
+  font-family: "Federo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.plaster-regular {
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ~~~~~~~ */
+/* CONTENT */
+/* ~~~~~~~ */
+
 *, body {
     margin: 0px;
-    padding: 0px;
+   padding: 0px;
 }
 
 body {
@@ -8,15 +29,20 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
-#content {
+#filter {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    background: url("../asset/blurry-gradient-haikei(1).svg") no-repeat fixed center;
-    background-size: cover;
     opacity: .34;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: -10px;
+    color: rgb(55, 59, 58);
+    opacity: .8;
 }
