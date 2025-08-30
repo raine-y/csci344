@@ -24,7 +24,8 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    opacity: .34;
+    opacity: .1;
+    filter: blur(2.2px);
 }
 
 h1 {
