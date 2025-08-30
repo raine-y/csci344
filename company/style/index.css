@@ -2,19 +2,6 @@
 /* FONT FAMILIES */
 /* ~~~~~~~~~~~~~ */
 
-.federo-regular {
-  font-family: "Federo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.plaster-regular {
-  font-family: "Plaster", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 /* ~~~~~~~ */
 /* CONTENT */
 /* ~~~~~~~ */
@@ -25,7 +12,7 @@
 }
 
 body {
-    background: url("../asset/blurry-gradient-haikei.svg") no-repeat fixed center;
+    background: url("../asset/blurry-gradient-haikei(2).svg") no-repeat fixed center;
     background-size: cover;
     display: flex;
     flex-direction: column;
