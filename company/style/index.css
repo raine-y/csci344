@@ -2,8 +2,18 @@
 /* FONT FAMILIES */
 /* ~~~~~~~~~~~~~ */
 
+@font-face {
+  font-family: bytesized;
+  src: url(../font/Bytesized/Bytesized-Regular.ttf);
+}
+
+@font-face {
+  font-family: coralPixels;
+  src: url(../font/Coral_Pixels/CoralPixels-Regular.ttf);
+}
+
 /* ~~~~~~~ */
-/* CONTENT */
+/* ur BODY */
 /* ~~~~~~~ */
 
 *, body {
@@ -24,13 +34,65 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    opacity: .1;
-    filter: blur(2.2px);
+    opacity: .09;
+    filter: blur(2.1px);
+    z-index: 1;
 }
 
-h1 {
-    margin: 0px;
-    margin-bottom: -10px;
-    color: rgb(55, 59, 58);
-    opacity: .8;
+/* ~~~~~~ */
+/* HEADER */
+/* ~~~~~~ */
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content max-content;
+  
 }
+
+#header { 
+  margin-top: 36px;
+  margin-left: 36px;
+  margin-right: 36px;
+  width: 90%;
+  justify-self: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#header > h1 {
+  font-family: coralPixels;
+  margin-left: 8px;  
+  font-size: 64px;
+}
+
+#dividerContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#divider {
+  width: 97%;
+  height: 4px;
+  background-color: #123137;
+  border-top: #4c9de8 solid 1px;
+  border-bottom: #ae6a43 solid 2px;
+  opacity: .85;
+}
+
+#blueDiv {
+  background-color: #b4dcdd;
+  opacity: .8;
+  height: 7px;
+  width: 3%;
+  border-left: 8px solid #3b7ec8;
+}
+
+
+/* ~~~~~~~ */
+/* CONTENT */
+/* ~~~~~~~ */
