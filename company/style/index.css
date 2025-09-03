@@ -117,4 +117,34 @@ body {
 .linkContainer {
   display: flex;
   flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkContainer > h2 {
+  font-family: bytesized;
+  font-size: 37px;
+  margin-left: 8px;
+}
+
+.bulletWrapper > span {
+  font-family: coralPixels;
+  font-size: 38px;
+}
+
+/* ~~~~~~~ */
+/* BULLETS */
+/* ~~~~~~~ */
+
+.activeBullet {
+  display: none;
+}
+
+.linkContainer:hover .activeBullet {
+  display: block;
+}
+
+.linkContainer:hover .inactiveBullet {
+  display: none;
 }
