@@ -96,3 +96,25 @@ body {
 /* ~~~~~~~ */
 /* CONTENT */
 /* ~~~~~~~ */
+
+#menu {
+  width: 90%;
+  justify-self: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ~~~~~~~~~~ */
+/* NAVIGATION */
+/* ~~~~~~~~~~ */
+
+#navigationWrapper {
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+}
