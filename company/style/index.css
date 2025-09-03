@@ -67,7 +67,7 @@ body {
 #header > h1 {
   font-family: coralPixels;
   margin-left: 8px;  
-  font-size: 64px;
+  font-size: 66px;
 }
 
 #dividerContainer {
@@ -110,8 +110,8 @@ body {
 /* ~~~~~~~~~~ */
 
 #navigationWrapper {
-  margin-left: 8px;
   margin-top: 20px;
+  margin-left: 8px;
 }
 
 .linkContainer {
@@ -120,12 +120,13 @@ body {
   justify-content: left;
   align-items: center;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .linkContainer > h2 {
   font-family: bytesized;
   font-size: 37px;
-  margin-left: 8px;
+  margin-left: 9px;
 }
 
 .bulletWrapper > span {
@@ -137,14 +138,36 @@ body {
 /* BULLETS */
 /* ~~~~~~~ */
 
+.currentBullet .activeBullet {
+  display: inline !important;
+}
+
+.currentBullet .inactiveBullet {
+  display: none !important;
+}
+
 .activeBullet {
   display: none;
 }
 
 .linkContainer:hover .activeBullet {
-  display: block;
+  display: inline;
 }
 
 .linkContainer:hover .inactiveBullet {
   display: none;
+}
+
+/* ~~~~~~ */
+/* IFRAME */
+/* ~~~~~~ */
+
+#iframeWrapper {
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 28px;
+}
+
+iframe {
+  width: calc(100% - 15px);
 }
