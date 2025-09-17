@@ -2,3 +2,46 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #16161d;
+}
+
+/* ~~~~~~~~~~ */
+/* Navigation */
+/* ~~~~~~~~~~ */
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#nav > h1 {
+    margin-left: 12px;
+    margin-top: 8px;
+    font-family: 'tasa';
+    font-weight: 600;
+    color: #a3445c;
+    font-size: 21px;
+    grid-column-start: 1;
+    grid-column-start: 1;
+}
+
+#linkWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkWrapper > a, p {
+    margin-top: 8px;
+    font-family: 'tasa';
+    font-weight: 400;
+    color: #F7EEF0;  
+    font-size: 20px; 
+}
+
+.currentPage {
+
+}

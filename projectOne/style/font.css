@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "figtree";
+    src: url("../font/Figtree/Figtree-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "figtreeItalic";
+    src: url("../font/Figtree/Figtree-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "jakarta";
+    src: url("../font/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "jakartaItalics";
+    src: url("../font/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "tasa";
+    src: url("../font/TASA_Orbiter/TASAOrbiter-VariableFont_wght.ttf");
+}
