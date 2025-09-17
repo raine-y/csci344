@@ -19,12 +19,13 @@ body {
 #nav > h1 {
     margin-left: 12px;
     margin-top: 8px;
-    font-family: 'tasa';
-    font-weight: 600;
+    font-family: 'inconsolata';
+    font-weight: 400;
     color: #a3445c;
     font-size: 21px;
     grid-column-start: 1;
     grid-column-start: 1;
+    cursor: pointer;
 }
 
 #linkWrapper {
@@ -36,12 +37,31 @@ body {
 
 #linkWrapper > a, p {
     margin-top: 8px;
-    font-family: 'tasa';
-    font-weight: 400;
+    font-family: 'inconsolata';
+    font-weight: 300;
     color: #F7EEF0;  
     font-size: 20px; 
 }
 
-.currentPage {
-
+#linkWrapper > p {
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+#linkWrapper > a {
+    cursor: pointer;
+    font-style: italic;
+}
+
+#linkWrapper > a:hover {
+    text-decoration: underline;
+}
+
+.currentPage {
+    font-weight: 400 !important;
+    color: #B4667A !important;
+    font-size: 21px !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+

@@ -18,3 +18,7 @@
     font-family: "tasa";
     src: url("../font/TASA_Orbiter/TASAOrbiter-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "inconsolata";
+    src: url("../font/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
