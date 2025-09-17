@@ -2,3 +2,66 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #16161d;
+}
+
+/* ~~~~~~~~~~ */
+/* Navigation */
+/* ~~~~~~~~~~ */
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#nav > h1 {
+    margin-left: 12px;
+    margin-top: 8px;
+    font-family: 'inconsolata';
+    font-weight: 400;
+    color: #a3445c;
+    font-size: 21px;
+    grid-column-start: 1;
+    grid-column-start: 1;
+    cursor:default;
+}
+
+#linkWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+
+#linkWrapper > a, p {
+    margin-top: 8px;
+    font-family: 'inconsolata';
+    font-weight: 300;
+    color: #F7EEF0;  
+    font-size: 21px; 
+}
+
+#linkWrapper > p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#linkWrapper > a {
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#linkWrapper > a:hover {
+    text-decoration: underline;
+}
+
+.currentPage {
+    font-weight: 400 !important;
+    color: #B4667A !important;
+    font-size: 21px !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}

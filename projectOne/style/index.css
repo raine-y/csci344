@@ -25,14 +25,14 @@ body {
     font-size: 21px;
     grid-column-start: 1;
     grid-column-start: 1;
-    cursor: pointer;
+    cursor:default;
 }
 
 #linkWrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: top;
 }
 
 #linkWrapper > a, p {
@@ -40,7 +40,7 @@ body {
     font-family: 'inconsolata';
     font-weight: 300;
     color: #F7EEF0;  
-    font-size: 20px; 
+    font-size: 21px; 
 }
 
 #linkWrapper > p {
@@ -51,6 +51,7 @@ body {
 #linkWrapper > a {
     cursor: pointer;
     font-style: italic;
+    text-decoration: none;
 }
 
 #linkWrapper > a:hover {
