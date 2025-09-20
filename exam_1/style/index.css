@@ -1,0 +1,156 @@
+*, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #151515;
+}
+
+/* HEADER */
+
+header {
+    width: calc(100vw - 28px);
+    margin: auto;
+    margin-top: 14px;
+    border-bottom: solid #eaecf0 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+#flags > img {
+    height: 50px;
+}
+
+#flags:last-child {
+    margin-right: 10px;
+}
+
+h1 {
+    color: #eaecf0;
+    font-size: 52px;
+}
+
+/* WIKIPEDIA INSPIRED IMAGE BLOCKS */
+
+.imageBlock {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    background-color: #202122;
+    border: solid 2px #55595d;
+    padding: 8px;
+    height: fit-content;
+}
+
+.imageBlock > p {
+    margin-top: 4px;
+    text-align: justify;
+    color: #eaecf0;
+}
+
+.imageBlock > img {
+    border: solid 2px #55595d;
+}
+
+.wiki {
+    text-decoration: none;
+}
+.wiki:active {
+    color: #8da2e3;
+}
+.wiki:hover {
+    color: #8da2e3;
+    text-decoration: underline;
+}
+.wiki:visited {
+    color: #8da2e3;
+    text-decoration: none;
+}
+
+.wikiCredit {
+    color: #a3a9b0;
+}
+
+/* CONTENT */
+
+#content {
+    width: calc(100vw - 28px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+}
+
+.imageFlex {
+    flex-direction: column;
+}
+
+#Marina {
+    margin-bottom: 14px;
+}
+
+#textFlex {
+    flex-direction: column;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#textFlex > p {
+    font-size: 19px;
+    color: #dadde1;
+}
+
+ul {
+    margin-top: 28px;
+    font-size: 20px;
+    color: #dadde1; 
+    margin-left: 20px;
+}
+ 
+li {
+    margin-bottom: 14px;
+}
+
+li > p {
+    margin-left: 7px;
+    font-size: 19px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.redText {
+    color: #DE8D91;
+}
+
+.blueText {
+    color: #A7D1E9;
+}
+
+table {
+    margin-top: 28px;
+    margin-left: 14px;
+    text-align: left;
+    background-color: #202122;
+    border: solid 2px #55595d;
+    border-collapse: collapse;
+}
+ tr, th, td {
+    border: solid 2px #55595d;
+    padding: 10px;
+ }
+ th:nth-child(odd) {
+    color: #DE8D91;
+ }
+
+th:nth-child(even) {
+    color: #A7D1E9;
+}
+
+td {
+    color: #a4a9af;
+}
