@@ -83,7 +83,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #974a5c;
-  color: white;
+  color: #f5eef0;
   padding: 12px 20px;
   border: none;
   border-radius: 0px;
