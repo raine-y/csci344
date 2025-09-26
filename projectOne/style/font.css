@@ -22,3 +22,7 @@
     font-family: "inconsolata";
     src: url("../font/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
 }
+@font-face {
+    font-family: "notable";
+    src: url(../font/Notable/Notable-Regular.ttf);
+}

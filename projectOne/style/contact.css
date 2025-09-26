@@ -21,8 +21,8 @@ body {
     margin-top: 8px;
     font-family: 'inconsolata';
     font-weight: 400;
-    color: #a3445c;
-    font-size: 21px;
+    color: #c3395c;
+    font-size: 22px;
     grid-column-start: 1;
     grid-column-start: 1;
     cursor:default;
@@ -60,7 +60,7 @@ body {
 
 .currentPage {
     font-weight: 400 !important;
-    color: #B4667A !important;
+    color: #bc808b !important;
     font-size: 21px !important;
     text-decoration: none !important;
     cursor: default !important;
@@ -104,3 +104,4 @@ input[type=submit]:hover {
   font-family: 'inconsolata';
   margin-top: 80px;
 }
+

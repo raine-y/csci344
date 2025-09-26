@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
 body {
     background-color: #16161d;
 }
@@ -14,6 +19,7 @@ body {
 #nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    z-index: 17;
 }
 
 #nav > h1 {
@@ -21,8 +27,8 @@ body {
     margin-top: 8px;
     font-family: 'inconsolata';
     font-weight: 400;
-    color: #a3445c;
-    font-size: 21px;
+    color: #c3395c;
+    font-size: 22px;
     grid-column-start: 1;
     grid-column-start: 1;
     cursor:default;
@@ -60,9 +66,110 @@ body {
 
 .currentPage {
     font-weight: 400 !important;
-    color: #B4667A !important;
+    color: #bc808b !important;
     font-size: 21px !important;
     text-decoration: none !important;
     cursor: default !important;
 }
 
+/* ~~~~~~~ */
+/* MAIN  . */
+/* ~~~~~~~ */
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24%;
+    overflow: hidden;
+}
+
+
+
+#intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+#productPlacement {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    width: 400px;
+}
+
+#productPlacement > a:link, a:visited {
+background-color: #b3838b;
+color: white;
+padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#productPlacement > a:hover, a:active {
+  background-color: #b4445d;
+}
+
+
+#companyName {
+    font-family: 'notable';
+    color: #b4445d;
+    font-size: 8rem;
+    z-index: 10;
+    position: absolute;
+    text-align: right;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    top: 50px;
+    overflow-y: hidden;
+}
+
+#compantName > h2 {
+    overflow-y: hidden;
+}
+
+/* ~~~~~~~ */
+/* FOOTER. */
+/* ~~~~~~~ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d1d24;
+    height: 60px;
+    z-index: 15
+}
+
+footer > p {
+    font-size: 13px;
+    font-family: 'inconsolata';
+    color: #ded7d9;
+}
+
+footer > p:last-child {
+    font-style: italic;
+    margin-bottom: 38px;
+}
+
+#footerWave {
+    position: fixed;
+     bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}

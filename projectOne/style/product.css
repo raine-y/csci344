@@ -21,8 +21,8 @@ body {
     margin-top: 8px;
     font-family: 'inconsolata';
     font-weight: 400;
-    color: #a3445c;
-    font-size: 21px;
+    color: #c3395c;
+    font-size: 22px;
     grid-column-start: 1;
     grid-column-start: 1;
     cursor:default;
@@ -60,7 +60,7 @@ body {
 
 .currentPage {
     font-weight: 400 !important;
-    color: #B4667A !important;
+    color: #bc808b !important;
     font-size: 21px !important;
     text-decoration: none !important;
     cursor: default !important;
@@ -70,11 +70,15 @@ body {
 /* PRODUCTS   */
 /* ~~~~~~~~~~ */
 
+h1 > span {
+    color: #a3445c;
+}
+
 #productContainer {
-    display: grid;
+    display: flex;
     margin-top: 80px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content;
+    flex-direction: column;
+    align-items: center;
 }
 
 #productHeader {
@@ -86,8 +90,6 @@ body {
     justify-content: space-between;
     align-items: center;
     align-items: top;
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 
 #productHeader > img {
@@ -105,15 +107,25 @@ body {
 
 #productGrid {
     margin-top: 50px;
-    margin-bottom: 40px;
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-self: space-between;
-    align-items: center;
 }
-
 .itemContainer {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 1100px) {
+  #productGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  #productGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
