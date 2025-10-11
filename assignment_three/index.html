@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form ~ Raine Walker</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <script src="script/form.js"></script>
+  </head>
+  <body>
+    <form id="feedbackForm" onsubmit="feedbackFormProcess()">
+      <fieldset class="SectionBackground">
+        <legend class="LegendBackground">Feedback</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="firstName"
+                ><span class="requiredRed">*</span>First name:</label
+              >
+            </td>
+            <td>
+              <input id="firstName" type="text" name="firstName" size="33" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="lastName"
+                ><span class="requiredRed">*</span>Last name:</label
+              >
+            </td>
+            <td>
+              <input id="lastName" type="text" name="lastName" size="33" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"
+                ><span class="requiredRed">*</span>E-mail Address:</label
+              >
+            </td>
+            <td><input id="email" type="text" name="email" size="33" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phone"
+                ><span class="requiredRed">*</span>Phone number:</label
+              >
+            </td>
+            <td><input id="phone" type="text" name="phone" size="33" /></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <label for="comments"
+                ><span class="requiredRed">*</span>Comments:</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="12"
+                cols="54"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><input type="submit" value="Submit feedback" /></td>
+            <td><input type="reset" value="Reset form" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
