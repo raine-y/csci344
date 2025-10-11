@@ -43,19 +43,20 @@ function emailValid(email) {
     }
     if (c == 0)
         return true;
-    else
-    {
+    else {
         alert("Error: Invalid e-mail address.");
         return false;
     }
 }
+
 function phoneValid(phone) {
-    if (phone == "") {
-        alert("Error: Please input your phone number.")
+     if (phone == "") {
+        alert("Error: Please input your phone number.");
         return false;
     }
     return true;
 }
+
 function commentsValid(comments) {
     if (comments == "") {
         alert("Error: Please input your comments.");
