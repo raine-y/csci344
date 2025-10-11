@@ -2,3 +2,8 @@
     margin: 6px;
     padding: 0;
 }
+
+.requiredRed {
+    color: red;
+    margin-right: 2px;
+}
