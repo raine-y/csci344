@@ -21,27 +21,37 @@ function feedbackFormValidate(feedbackFormObj) {
 
     return firstNameOK && lastNameOK && emailOK && phoneOK && commentsOK;
 }
+
 function nameValid(firstName) {
+    var regx = firstName.search(/^[-'\w\s]+$/);
     if (firstName == "") {
         alert("Error: Please input your first name.");
         return false;
-    }
-    return true;
-}
-function lastNameValid(lastName) {
-    if (lastName == "") {
-        alert("Error: Please input your last name.");
+    } else if (regx == 0) {
+        return true;
+    } else {
+        alert("Error: Invalid first name.");
         return false;
     }
-    return true;
+}
+function lastNameValid(lastName) {
+    var regx = lastName.search(/^[-'\w\s]+$/);
+     if (lastName == "") {
+        alert("Error: Please input your last name.");
+        return false;
+    } else if (regx == 0) {
+        return true;
+    } else {
+        alert("Error: Invalid last name.");
+        return false;
+    }
 }
 function emailValid(email) {
-    var c = email.search(/.+@.+/);
+    var regx = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/);
     if (email == "") {
         alert("Error: Please input your email.")
         return false;
-    }
-    if (c == 0)
+    } else if (regx == 0)
         return true;
     else {
         alert("Error: Invalid e-mail address.");
@@ -50,11 +60,16 @@ function emailValid(email) {
 }
 
 function phoneValid(phone) {
-     if (phone == "") {
-        alert("Error: Please input your phone number.");
+    var regx1 = phone.search(/^\d{3}[-\s]{0,1}\d{3}[-\s]{0,1}\d{4}$/);
+    var regx2 = phone.search(/^\d{3}[-\s]{0,1}\d{4}$/);
+    if (phone == "") {
+        alert("Error: Please input your phone number.")
         return false;
-    }
-    return true;
+    } else if (regx1 == 0 || regx2 == 0)
+        return true;
+    else
+        alert("Error: Invalid phone number.");
+    return false;
 }
 
 function commentsValid(comments) {
