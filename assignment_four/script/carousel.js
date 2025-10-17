@@ -8,7 +8,9 @@ function carouselHandler() {
         carouselItem[i].style.display = "none";
     }
     carouselIndex++;
-    if (carouselIndex > carouselItem.length) { carouselIndex = 1 }
+    if (carouselIndex > carouselItem.length) { 
+        carouselIndex = 1; 
+    }
     carouselItem[carouselIndex - 1].style.display = "block";
-    setTimeout(carouselHandler, 2000); // Change image every
+    setTimeout(carouselHandler, 2000);
 }
