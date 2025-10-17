@@ -1,4 +1,38 @@
-*, body {
+body {
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to right, #e5e8d9, #e4d6d6);
+}
+
+#carouselContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#carousel {
+    display: flex;
+    flex-direction: column;
+}
+.carouselItem {
+    min-width: 300px;
+    max-width: 700px;
+    margin: 0 10px;
+}
+.carouselItem img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transition {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
