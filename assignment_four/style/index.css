@@ -28,12 +28,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
 }
 
-.transition {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.fadeIn {
+    animation: fadeInAnimation .3s ease-in forwards;
+}
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.fadeOut {
+    animation: fadeOutAnimation 1s ease-out forwards;
+}
+@keyframes fadeOutAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
