@@ -2,7 +2,7 @@ function feedbackFormProcess() {
     var feedbackFormObj = document.getElementById("feedbackForm");
     if (feedbackFormValidate(feedbackFormObj)) {
         alert("Thank you for your feedback!");
-    }
+        feedbackFormObj.action = "php/process_feedback.php";    }
 }
 
 function feedbackFormValidate(feedbackFormObj) {
