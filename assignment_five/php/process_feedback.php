@@ -9,7 +9,9 @@
 <body>
     <div id="getContainer">
         Welcome <?php echo $_GET["firstName"], " ", $_GET["lastName"]; ?><br>
-        Your email address is: <?php echo $_GET["email"]; ?>
+        Your email address is: <?php echo $_GET["email"]; ?><br>
+        Your phone number is: <?php echo $_GET["phone"]; ?><br>
+        You said: <?php echo $_GET["comments"]; ?>
     </div>
     <div id="postContainer">
 
