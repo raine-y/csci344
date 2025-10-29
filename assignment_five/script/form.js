@@ -2,7 +2,10 @@ function feedbackFormProcess() {
     var feedbackFormObj = document.getElementById("feedbackForm");
     if (feedbackFormValidate(feedbackFormObj)) {
         alert("Thank you for your feedback!");
-        feedbackFormObj.action = "php/process_feedback.php";    }
+        // feedbackFormObj.method = "get"; // UNCOMMENT THIS LINE TO USE GET 
+        feedbackFormObj.method = "post";   // COMMENT THIS LINE TO USE GET
+        feedbackFormObj.action = "php/feedback.php";
+    }
 }
 
 function feedbackFormValidate(feedbackFormObj) {
@@ -36,7 +39,7 @@ function nameValid(firstName) {
 }
 function lastNameValid(lastName) {
     var regx = lastName.search(/^[-'\w\s]+$/);
-     if (lastName == "") {
+    if (lastName == "") {
         alert("Error: Please input your last name.");
         return false;
     } else if (regx == 0) {
