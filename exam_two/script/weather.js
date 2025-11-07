@@ -60,16 +60,16 @@ function displayResults() {
     if (rain == "no") {
         rainEntry.textContent = '\u00a0' + "No";
     }
-
-    
 }
 
 function fahrToCels(t) {
-    c = (t - 32.0) / (9.0/5.0) ;
+    c = (t - 32.0) / (9.0/5.0);
+    c.toFixed(2);
     return c;
 }
 
 function celsToFahr(t) {
     f = t * (9/5) + 32;
+    f.toFixed(2);
     return f;
 }
