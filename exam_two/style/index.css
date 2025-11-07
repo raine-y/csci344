@@ -1,0 +1,96 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.SectionBackground {
+  border: solid 2px black;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+}
+
+#weather {
+  width: fit-content;
+  border: solid 6px lightblue;
+  margin: 25px;
+  padding: 8px;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.tdSpace {
+  margin-right: 6px;
+}
+
+#weatherResults {
+  margin: 0px;
+  margin-left: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#weatherResults > h3 {
+  font-style: italic;
+  margin: 0px;
+  margin-top: 6px;
+  margin-left: 2px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#weatherResults > h4 {
+  margin: 0px;
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#rainCheckP {
+  margin: 0px;
+}
+
+#rainCheck > h4 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#rainCheck {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.tempResult {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tempResult > p {
+  margin: 0px;
+}
+
+#youShould {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}

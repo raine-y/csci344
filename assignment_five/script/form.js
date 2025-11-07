@@ -17,7 +17,7 @@ function feedbackFormValidate(feedbackFormObj) {
     var firstNameOK, lastNameOK, emailOK, phoneOK, commentsOK;
 
     firstNameOK = nameValid(firstName);
-    lastNameOK = lastNameValid(lastName)
+    lastNameOK = lastNameValid(lastName);
     emailOK = emailValid(email);
     phoneOK = phoneValid(phone);
     commentsOK = commentsValid(comments);
