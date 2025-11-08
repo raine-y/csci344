@@ -10,20 +10,33 @@
 
 <body>
     <?php
-if(isset($_POST['firstName']) && isset($_POST['lastName'])) {
-    $data = $_POST['firstName'] . '-' . $_POST['lastName'] . "\r\n";
-    $ret = file_put_contents('mydata.txt', $data, FILE_APPEND | LOCK_EX);
-    if($ret === false) {
+
+    echo "I do not have permission to write to file.", "<br >";
+    echo "Or for using chmod.", "<br >";
+    echo "Which makes sense to be fair...  ", "<br >";
+    echo "But I cannot come up with another solution for writing to a .txt that doesn't need write permission.", "<br >", "<br >";
+
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    $fName = $_POST["firstName"];
+    $lName = $_POST["lastName"];
+    $email = $_POST["email"];
+    $pNumber = $_POST["phone"];
+    $file = __DIR__ . '/userdata.txt';
+    echo "| Name: ", $fName, " ", $lName, "<br>";
+    echo "| Email: ", $email, "<br>";
+    echo "| Phone Number: ", $pNumber, "<br>";
+    echo "Saving to current working directory: ";
+    echo getcwd() . "\n", "<br >";
+    $data = $fName . '-' . $lName . '-' . $email . '-' .  $pNumber . "\r\n";
+    $ret = file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
+    if ($ret === false) {
         die('There was an error writing this file');
-    }
-    else {
+    } else {
         echo "$ret bytes written to file";
     }
-}
-else {
-   die('no post data to process');
-}
-?>
+    ?>
 </body>
 
 </html>
