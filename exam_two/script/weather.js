@@ -46,7 +46,7 @@ function displayResults() {
 
     if (method == "fahrenheit") {
         var fahrenheit = temp;
-        var celsius = fahrToCels(temp); 
+        var celsius = fahrToCels(temp);
         fahrenheitEntry.textContent = '\u00a0' + fahrenheit + '\xB0';
         celsiusEntry.textContent = '\u00a0' + celsius.toFixed(1) + '\xB0';
         if (fahrenheit <= 50) {
@@ -54,8 +54,8 @@ function displayResults() {
         } else {
             jacketItem.style.display = "none";
         }
-    } 
-    
+    }
+
     if (method == "celsius") {
         var celsius = temp;
         var fahrenheit = celsToFahr(temp);
@@ -80,11 +80,11 @@ function displayResults() {
 }
 
 function fahrToCels(t) {
-    c = (t - 32.0) / (9.0/5.0);
+    c = (t - 32.0) / (9.0 / 5.0);
     return c;
 }
 
 function celsToFahr(t) {
-    f = t * (9/5) + 32;
+    f = t * (9 / 5) + 32;
     return f;
 }
