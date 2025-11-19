@@ -37,7 +37,7 @@ Connection script now terminating.",
     );
     exit(0);
 } else {
-    echo "Database connection established.<br>";
+    echo "> Database connection established.<br>";
 }
 
 ?>
