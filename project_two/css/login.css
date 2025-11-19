@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    text-align: center;
+    width: 100vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+form table {
+  width: 100%;
+}
+form table td {
+  padding: 10px;
+}
+form table td label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"] {
+    padding: 6px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+inout[type="submit"]:hover {
+    background-color: #45a049;
+}
