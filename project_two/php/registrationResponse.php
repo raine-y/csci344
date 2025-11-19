@@ -23,12 +23,6 @@ $email = $_POST["email"];
 $country = $_POST["country"];
 $password = $_POST["password"];
 
-echo "| Name: ", $name, "<br>";
-echo "| Username: ", $username, "<br>";
-echo "| Email: ", $email, "<br>";
-echo "| Country: ", $country, "<br>";
-echo "| Password: ", $password, "<br>";
-
 if (emailAlreadyExists($db, $_POST["email"])) {
     echo "<h3>Sorry, but your e-mail
 address is already registered.</h3>";
@@ -49,7 +43,7 @@ VALUES (
 );";
 
 $success = mysqli_query($db, $query);
-echo "<h3>Thank you for registering with our e-store.</h3>";
+echo "<h3 id='registrationNotification'>Thank you for registering!</h3>";
 }
 
 mysqli_close($db);
