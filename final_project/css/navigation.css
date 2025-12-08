@@ -1,4 +1,6 @@
 #navigation {
+  margin-top: 15px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   width: calc(100vw - 60px);
@@ -6,10 +8,93 @@
   margin-right: auto;
   justify-content: space-between;
   align-items: center;
+  font-family: "Spectral";
+}
+
+#navigation > #nameForeground {
+  font-size: 1.6rem;
+  font-weight: 700;
+  z-index: 10;
+}
+
+#navigation > #nameForeground > a:link,
+#navigation > #nameForeground > a:visited,
+#navigation > #nameForeground > a:hover,
+#navigation > #nameForeground > a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 #navigation > ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+}
+
+#pageNav > li {
+  font-size: 1.6rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+#pageNav > li > a:link,
+#pageNav > li > a:visited,
+#pageNav > li > a:hover,
+#pageNav > li > a:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+#pageNav > li > a:hover {
+  text-decoration: line-through;
+}
+
+#accountNav > li {
+  font-size: 1.2rem;
+  margin-right: 3px;
+  margin-left: 3px;
+  color: rgb(65, 65, 65);
+}
+
+#accountNav > li > a:link,
+#accountNav > li > a:visited,
+#accountNav > li > a:hover,
+#accountNav > li > a:active {
+  color: rgb(57, 57, 57);
+  text-decoration: none;
+}
+
+#accountNav > li > a:hover {
+  color: rgb(128, 127, 127);
+}
+
+/* ~~~~~~~~ */
+/* DROPDOWN */
+/* ~~~~~~~~ */
+
+.dropdownLinks {
+  display: none;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 0.94);
+  min-width: 160px;
+  z-index: 5;
+  border: solid rgba(0, 0, 0, 0.6) 2px;
+}
+
+.dropdownLinks a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.dropdownLinks a:hover {
+  color: rgb(31, 31, 31);
+}
+
+#productsWrapper:hover .dropdownLinks{
+  display: block;
 }
