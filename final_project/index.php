@@ -56,5 +56,22 @@
       ?>
     </ul>
   </div>
+  <main>
+    <div>
+      <img id="ice" src="assets/Iceland_Lightroom-4.png">
+    </div>
+    <div id="marketContainer">
+      <h2>
+        &nbsp;&nbsp;COMPANY_NAME LOVES YOU
+      </h2>
+      <p>
+        This is where I would put a simple brand identity. Something to make the company<br>
+        feel relatable and maybe just a little too personable. It has to be funny.<br>
+        &nbsp;- Core Value<br>
+        &nbsp;- Core Value<br>
+        &nbsp;- Core value<br>
+      </p>
+    </div>
+  </main>
 </body>
 </html>

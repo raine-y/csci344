@@ -3,3 +3,30 @@
     padding: 0px;
 }
 
+body {
+    overflow: hidden;
+}
+
+main {
+    background-color: #292929;
+    height: 100vh;
+}
+
+#ice {
+    position: absolute;
+    width: 100vw;
+    -webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#marketContainer {
+    font-family: 'Spectral';
+    position: absolute;
+    z-index: 15;
+    top: 30%;
+    right: 20%;
+    overflow: hidden;
+}

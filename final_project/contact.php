@@ -61,16 +61,16 @@
     <div id="contactContainer">
       <form id="contactForm">
         <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
 
         <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
 
         <label for ="email>">Email: </label>
-        <input type="text" id="email" name="email" placeholder="Your last name...">
+        <input type="text" id="email" name="email" placeholder="Your last name..." required>
 
         <label for="subject">Comment:</label>
-        <textarea id="subject" name="subject" placeholder="Your message..." style="height:270px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Your message..." style="height:270px" required></textarea>
 
         <input type="submit" value="Submit">
       </form>
