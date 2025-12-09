@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/registration.css" />
+    <link rel="stylesheet" type="text/css" href="../css/response.css" />
     <?php include "connectToDatabase.php"; ?>
     <title>Registration</title>
 </head>
@@ -24,6 +24,7 @@ $password = $_POST["password"];
 if (emailAlreadyExists($db, $_POST["email"])) {
     echo "<h3>Sorry, but your e-mail
 address is already registered.</h3>";
+    echo "<a href='login.php'>Try Again</a>";
 } else {
     $query = "INSERT INTO hwalker2_final_exam_Users(
 name,

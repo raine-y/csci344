@@ -59,15 +59,15 @@
   </div>
   <main>
     <div id="contactContainer">
-      <form id="contactForm">
+      <form id="contactForm" onsubmit="thanks()">
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
 
         <label for="lname">Last Name:</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
 
-        <label for ="email>">Email: </label>
-        <input type="text" id="email" name="email" placeholder="Your last name..." required>
+        <label for="email>">Email: </label>
+        <input type="text" id="email" name="email" placeholder="Your email..." required>
 
         <label for="subject">Comment:</label>
         <textarea id="subject" name="subject" placeholder="Your message..." style="height:270px" required></textarea>
@@ -76,6 +76,34 @@
       </form>
     </div>
   </main>
+  <script>
+    function thanks() {
+      var contactObj = document.getElementById("contactForm");
+      if (contactObjValidate(contactObj)) {
+        alert("Thanks for your comment!");
+
+      }
+
+      function contactObjValidate(contactObj) {
+        var email = contactObj.email.value;
+        var emailOK;
+
+        emailOK = emailValid(email);
+
+        return emailOK;
+      }
+
+      function emailValid(email) {
+        var regx = email.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})$/);
+        if (regx == 0)
+          return true;
+        else {
+          alert("Error: Invalid e-mail address.");
+          return false;
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

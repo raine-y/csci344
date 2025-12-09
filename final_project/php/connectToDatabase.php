@@ -41,5 +41,3 @@ Connection script now terminating.",
 } else {
     echo "> Database connection established.<br>";
 }
-
-?>;
